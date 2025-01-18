@@ -1,0 +1,17 @@
+<div ng-controller="PreviousController">
+    <button ng-click="GetUsers()">GetAllUsers</button>
+    <table ng-if="users">
+        <thead>
+            <th>Name</th>
+            <th>UserName</th>
+            <th>Email</th>
+        </thead>
+        <tbody ng-repeat="user in users">
+            <tr>
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>

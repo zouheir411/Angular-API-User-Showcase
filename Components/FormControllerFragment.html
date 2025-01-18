@@ -1,0 +1,10 @@
+<div ng-controller="PreviousController">
+    <div ng-if="IsLoading">Loading ...</div>
+    <div ng-if="!IsLoading">UserName :
+        <pre>{{user}}</pre>
+        </div>
+        <form ng-submit="search()">
+            <input type="number" placeholder="Type user's id" ng-model="userId" min="1">
+            <input type="submit" value="Get user" >
+        </form>
+    </div>
